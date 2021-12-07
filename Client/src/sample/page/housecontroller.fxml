@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HouseController">
+    <children>
+        <Text fontSmoothingType="LCD" layoutX="139.0" layoutY="43.0" stroke="#e81313" strokeType="OUTSIDE" strokeWidth="0.0" text="Недвижимость" textAlignment="CENTER" wrappingWidth="447.736572265625">
+            <font>
+                <Font name="Book Antiqua" size="41.0" />
+            </font>
+        </Text>
+        <Button fx:id="addButton" layoutX="176.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Добавить" textFill="WHITE">
+            <font>
+                <Font name="Bookshelf Symbol 7" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="exitButton" layoutX="640.0" layoutY="465.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-background-radius: 10;" text="Выход" textFill="WHITE" />
+        <Label fx:id="infoLabel" layoutX="9.0" layoutY="30.0" prefHeight="18.0" prefWidth="229.0" textFill="#0e0e0e" />
+        <TableView fx:id="houseTable" layoutY="68.0" prefHeight="290.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="countryColums" prefWidth="123.99993741512299" text="Город" />
+                <TableColumn fx:id="typeColums" prefWidth="118.40003204345703" text="Тип" />
+                <TableColumn fx:id="countroomColums" prefWidth="177.60003662109375" text="Колличество&#10;комнат&#10;" />
+                <TableColumn fx:id="festiveColums" prefWidth="141.60000610351562" text="Праздничные" />
+                <TableColumn fx:id="priceColums" prefWidth="139.199951171875" text="Цена(за сутки)" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="typeField" layoutX="189.0" layoutY="369.0" prefHeight="26.0" prefWidth="98.0" promptText="Тип" />
+        <TextField fx:id="countryField" layoutX="56.0" layoutY="369.0" prefHeight="26.0" prefWidth="82.0" promptText="Город" />
+        <TextField fx:id="priceField" layoutX="599.0" layoutY="368.0" prefHeight="26.0" prefWidth="82.0" promptText="Цена" />
+        <Button fx:id="deleteButton" layoutX="479.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Удалить" textFill="WHITE">
+            <font>
+                <Font name="Bookshelf Symbol 7" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="redactButton" layoutX="325.0" layoutY="417.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="108.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Редактировать" textFill="WHITE">
+            <font>
+                <Font name="Bookshelf Symbol 7" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="poiskButton" layoutX="325.0" layoutY="460.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="108.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Поиск &#10;праздничных" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Bookshelf Symbol 7" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="resetButton" layoutX="665.0" layoutY="1.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="31.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="X" textFill="WHITE" />
+      <TextField fx:id="countroomField" layoutX="321.0" layoutY="369.0" prefHeight="26.0" prefWidth="98.0" promptText="Колл комнат" />
+      <CheckBox fx:id="prazdnik" layoutX="466.0" layoutY="373.0" mnemonicParsing="false" text="Праздничные" />
+    </children>
+</AnchorPane>

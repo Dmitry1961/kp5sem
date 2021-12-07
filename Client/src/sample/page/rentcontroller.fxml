@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #6495ED;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RentController">
+    <children>
+        <Button fx:id="exitButton" layoutX="648.0" layoutY="473.0" mnemonicParsing="false" style="-fx-background-color: black; -fx-background-radius: 10;" text="Выход" textFill="#f5f5f5">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+        <Text layoutX="165.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Арендованная панель">
+            <font>
+                <Font name="Agency FB" size="37.0" />
+            </font>
+        </Text>
+        <Button fx:id="renthouseButton" layoutX="157.0" layoutY="313.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Снятая недвижимость" textFill="#f5f5f5">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Button>
+      <Button fx:id="renthouseButton1" layoutX="406.0" layoutY="250.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Снятый трансопрт" textFill="#f5f5f5">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+    </children>
+</AnchorPane>
